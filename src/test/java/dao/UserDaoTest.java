@@ -17,7 +17,7 @@ public class UserDaoTest extends SpringJunitTest{
     private UserDao userDao;
     @Test
     public void select() {
-        System.out.println(userDao.select(1).getPassword());
-        System.out.println();
+        System.out.println(userDao.select(1).getU_name());
+        System.out.println(userDao.select(1).getU_phone());
     }
 }
