@@ -40,6 +40,7 @@
 				padding: 0!important;
 			}
 		</style>
+
 	</head>
 
 	<body>
@@ -54,7 +55,7 @@
 						<a href="#">管理员管理</a>
 					</li>
 					<li class="active">管理员列表</li>	
-					<a href="adminadd.html" target="mainFrame" style="float: right;margin-right: 7%;font-size: 20px;">
+					<a href="<%=basePath%>jsp/mayibackstage/adminadd.jsp" target="mainFrame" style="float: right;margin-right: 7%;font-size: 20px;">
 						<span class="glyphicon glyphicon-plus"></span>
 						<span style="">添加管理员</span>
 					</a>
