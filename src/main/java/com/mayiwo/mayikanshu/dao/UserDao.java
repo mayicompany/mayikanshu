@@ -2,8 +2,10 @@ package com.mayiwo.mayikanshu.dao;
 
 import com.mayiwo.mayikanshu.model.User;
 
+import java.util.List;
+
 public interface UserDao {
 
-     User select(Integer id);
+     List<User> getUsers();
 
 }

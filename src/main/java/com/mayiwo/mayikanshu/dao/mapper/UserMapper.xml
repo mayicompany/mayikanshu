@@ -4,9 +4,9 @@
 <mapper namespace="com.mayiwo.mayikanshu.dao.UserDao">
     <!-- parameterType表示要传入的参数的类型 ，resultType表示要返回的数据的类型-->
 
-    <!-- 处理登录操作 -->
-    <select id="select"   resultType="User">
-        select * from user where id=#{id}
+    <!-- 查询用户表所以信息 -->
+    <select id="getUsers"   resultType="User">
+        select * from user
     </select>
 
 </mapper>

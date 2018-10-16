@@ -1,17 +1,19 @@
 package com.mayiwo.mayikanshu.model;
 
 import java.math.BigInteger;
+import java.util.Date;
 
 public class User {
     private Integer id;
     private String u_name;  //用户名
     private Integer u_user;  //账号
-    private String password;  //密码
+    private String u_password;  //密码
     private String u_images;  //头像
     private Integer u_sex;     //性别
     private BigInteger u_phone;  //电话
     private String u_introduce;  //个性签名
     private Integer u_currer;  //书豆
+    private Date u_create_time;  //创建时间
 
     public Integer getId() {
         return id;
@@ -37,12 +39,12 @@ public class User {
         this.u_user = u_user;
     }
 
-    public String getPassword() {
-        return password;
+    public String getU_password() {
+        return u_password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setU_password(String u_password) {
+        this.u_password = u_password;
     }
 
     public String getU_images() {
@@ -83,6 +85,14 @@ public class User {
 
     public void setU_currer(Integer u_currer) {
         this.u_currer = u_currer;
+    }
+
+    public Date getU_create_time() {
+        return u_create_time;
+    }
+
+    public void setU_create_time(Date u_create_time) {
+        this.u_create_time = u_create_time;
     }
 }
 
