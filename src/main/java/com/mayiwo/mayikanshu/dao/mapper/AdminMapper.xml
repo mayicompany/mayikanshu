@@ -8,6 +8,10 @@
     <select id="login"   resultType="Admin">
         select * from admin where a_user=#{a_user} and a_password=#{a_password}
     </select>
+    <!--  添加管理员账户 -->
+    <insert id="addAdmin">
+        insert into admin (id,a_mane,a_user,a_password,a_phone,a_position,a_age.a_images,a_sex) values (null,#{a_mane},#{a_user},#{a_password},#{a_phone},#{a_position},#{a_age}.#{a_images},#{a_sex})
+    </insert>
 
     <!-- 登录操作 -->
     <select id="getAdmins"   resultType="Admin">
