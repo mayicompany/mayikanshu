@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <html>
 
 	<head>
@@ -102,7 +107,7 @@
 				</div>
 				<!--导航	-->
 				<div class="menu">
-					<a href="admin.html" target="mainFrame" class="nav-font">
+					<a href="<%=basePath%>mayikanshu/adminlist" target="mainFrame" class="nav-font">
 						<p>管理员管理</p>
 					</a>
 				</div>

@@ -4,9 +4,14 @@
 <mapper namespace="com.mayiwo.mayikanshu.dao.AdminDao">
     <!-- parameterType表示要传入的参数的类型 ，resultType表示要返回的数据的类型-->
 
-    <!-- 处理登录操作 -->
+    <!-- 登录操作 -->
     <select id="login"   resultType="Admin">
         select * from admin where a_user=#{a_user} and a_password=#{a_password}
+    </select>
+
+    <!-- 登录操作 -->
+    <select id="getAdmins"   resultType="Admin">
+        select * from admin
     </select>
 
 </mapper>
