@@ -10,6 +10,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 
 public class UserDaoTest extends SpringJunitTest{
@@ -17,6 +18,10 @@ public class UserDaoTest extends SpringJunitTest{
     private UserDao userDao;
     @Test
     public void getUsersTest() {
-        System.out.println(userDao.getUsers());
+        List<User> userList=userDao.getUsers();
+        for(User p:userList){
+            System.out.print(p.getU_currency());
+
+        }
     }
 }

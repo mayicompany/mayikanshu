@@ -5,14 +5,14 @@ import java.util.Date;
 
 public class User {
     private Integer id;
-    private String u_name;  //用户名
+    private String u_name;  //昵称
     private Integer u_user;  //账号
     private String u_password;  //密码
     private String u_images;  //头像
     private Integer u_sex;     //性别
     private BigInteger u_phone;  //电话
     private String u_introduce;  //个性签名
-    private Integer u_currer;  //书豆
+    private Integer u_currency;  //书豆
     private Date u_create_time;  //创建时间
 
     public Integer getId() {
@@ -79,12 +79,12 @@ public class User {
         this.u_introduce = u_introduce;
     }
 
-    public Integer getU_currer() {
-        return u_currer;
+    public Integer getU_currency() {
+        return u_currency;
     }
 
-    public void setU_currer(Integer u_currer) {
-        this.u_currer = u_currer;
+    public void setU_currency(Integer u_currency) {
+        this.u_currency = u_currency;
     }
 
     public Date getU_create_time() {

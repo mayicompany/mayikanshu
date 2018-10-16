@@ -101,7 +101,7 @@
 			
 				<!--导航	-->
 				<div class="menu">
-					<a href="usermanage.html" target="mainFrame" class="nav-font">
+					<a href="<%=basePath%>mayikanshu/userlist" target="mainFrame" class="nav-font">
 						<p>用户管理</p>
 					</a>
 				</div>
