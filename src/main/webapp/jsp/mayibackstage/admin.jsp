@@ -70,7 +70,7 @@
 				<div class="col-md-3">
 				
 					<div class="thumbnail">	
-						<img class="img-circle" src="img/admin1.png " width="188px" height="199px" alt="... ">
+						<img class="img-circle" src="<%=basePath%>jsp/mayibackstage/img/admin1.png " width="188px" height="199px" alt="... ">
 						<div class="caption font-weight-bold text-center ">
 							<h3 class=" ">${adminList.a_name}</h3>
 							<p>职务：${adminList.a_position}</p>
