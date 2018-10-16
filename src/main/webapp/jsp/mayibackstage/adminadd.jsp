@@ -11,17 +11,17 @@
 		<title>添加管理员</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Bootstrap CSS -->
-		<link href="<%=basePath%>jsp/mayibackstage/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<!-- index CSS -->
-		<link href="<%=basePath%>jsp/mayibackstage/css/index.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
 		<!-- jquery JS -->
-		<script src="<%=basePath%>jsp/mayibackstage/js/jquery-3.3.1.js"></script>
+		<script src="js/jquery-3.3.1.js"></script>
 		<!-- Bootstrap JS  -->
-		<script src="<%=basePath%>jsp/mayibackstage/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
 		<!-- 导入kindEditor所需插件 -->
-		<link rel="stylesheet" href="<%=basePath%>plugins/kindeditor-4.1.10/themes/default/default.css" />
-		<script src="<%=basePath%>plugins/kindeditor-4.1.10/kindeditor.js"></script>
-		<script src="<%=basePath%>plugins/kindeditor-4.1.10/lang/zh_CN.js"></script>
+		<link rel="stylesheet" href="plugins/kindeditor-4.1.10/themes/default/default.css" />
+		<script src="plugins/kindeditor-4.1.10/kindeditor.js"></script>
+		<script src="plugins/kindeditor-4.1.10/lang/zh_CN.js"></script>
 		<script>
 			$(document).ready(function() {
 
@@ -31,13 +31,14 @@
 				});
 
 			});
+
 			//实现kindeditor弹出图片上传窗口
 			KindEditor.ready(function(K) {
 				var editor = K.editor({ //图片上传
 					//指定上传文件的服务器端程序。
-					uploadJson: '<%=basePath%>plugins/kindeditor-4.1.10/jsp/upload_json.jsp',
+					uploadJson: 'plugins/kindeditor-4.1.10/jsp/upload_json.jsp',
 					//指定浏览远程图片的服务器端程序
-					fileManagerJson: '<%=basePath%>plugins/kindeditor-4.1.10/jsp/file_manager_json.jsp',
+					fileManagerJson: 'plugins/kindeditor-4.1.10/jsp/file_manager_json.jsp',
 					//是否允许进行文件管理
 					allowFileManager: true
 				});
